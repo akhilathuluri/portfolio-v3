@@ -2,44 +2,7 @@ import Image from "next/image"
 import { workExperienceService } from "@/lib/services"
 
 const Previous = async () => {
-  // Try to fetch from database, fallback to hardcoded data
-  let experiences = []
-  
-  try {
-    experiences = await workExperienceService.getPrevious()
-  } catch (error) {
-    console.log('Database not configured, using hardcoded data')
-    // Fallback to original hardcoded data
-    experiences = [
-      {
-        id: '1',
-        company_name: 'leapx.ai',
-        company_url: 'https://leapx.ai/',
-        position: 'ai engineer intern',
-        location: 'gurgaon, india',
-        favicon_url: '/leapx-ai-favicon.svg',
-        display_order: 1,
-      },
-      {
-        id: '2',
-        company_name: 'composio.dev',
-        company_url: 'https://composio.dev/',
-        position: 'software engineering (python)',
-        location: 'bangalore, india',
-        favicon_url: '/composio-dev-favicon.svg',
-        display_order: 2,
-      },
-      {
-        id: '3',
-        company_name: 'successscholar.in',
-        company_url: 'https://successscholar.in/',
-        position: 'product owner/developer',
-        location: 'kolkata, india',
-        favicon_url: '/successscholar-favicon.svg',
-        display_order: 3,
-      },
-    ]
-  }
+  const experiences = await workExperienceService.getPrevious()
 
   return (
     <section>
