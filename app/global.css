@@ -1,0 +1,405 @@
+@import 'tailwindcss';
+
+/* ============================================
+   THEME SYSTEM - Multiple Color Schemes
+   ============================================ */
+
+:root {
+  /* Font */
+  --font-primary: var(--font-space-grotesk);
+  
+  /* Spacing */
+  --spacing-figma-inside-gap: 10px;
+  --spacing-figma-outside-gap: 18px;
+}
+
+/* Light Mode (Default) */
+:root, [data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --bg-tertiary: #e5e5e5;
+  
+  --text-primary: #000000;
+  --text-secondary: #525252;
+  --text-tertiary: #737373;
+  
+  --accent-primary: #3b82f6;
+  --accent-secondary: #2563eb;
+  
+  --border-color: #e5e5e5;
+  --border-hover: #a3a3a3;
+  
+  --code-bg: #f5f5f5;
+  --code-border: #e5e5e5;
+  
+  --selection-bg: #47a3f3;
+  --selection-text: #fefefe;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg-primary: #000000;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #262626;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-tertiary: #737373;
+  
+  --accent-primary: #60a5fa;
+  --accent-secondary: #3b82f6;
+  
+  --border-color: #262626;
+  --border-hover: #525252;
+  
+  --code-bg: #1a1a1a;
+  --code-border: #262626;
+  
+  --selection-bg: #3b82f6;
+  --selection-text: #ffffff;
+}
+
+/* Cyberpunk Theme (Purple/Pink Neon) */
+[data-theme="cyberpunk"] {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #1a0f2e;
+  --bg-tertiary: #2a1545;
+  
+  --text-primary: #f0e7ff;
+  --text-secondary: #b794f6;
+  --text-tertiary: #9370db;
+  
+  --accent-primary: #ff00ff;
+  --accent-secondary: #ff1493;
+  
+  --border-color: #4a1f7a;
+  --border-hover: #ff00ff;
+  
+  --code-bg: #1a0f2e;
+  --code-border: #4a1f7a;
+  
+  --selection-bg: #ff00ff;
+  --selection-text: #0a0a0f;
+}
+
+/* Matrix Theme (Green Terminal) */
+[data-theme="matrix"] {
+  --bg-primary: #000000;
+  --bg-secondary: #0d1b0d;
+  --bg-tertiary: #1a331a;
+  
+  --text-primary: #00ff00;
+  --text-secondary: #00cc00;
+  --text-tertiary: #009900;
+  
+  --accent-primary: #00ff41;
+  --accent-secondary: #39ff14;
+  
+  --border-color: #1a331a;
+  --border-hover: #00ff00;
+  
+  --code-bg: #0d1b0d;
+  --code-border: #1a331a;
+  
+  --selection-bg: #00ff41;
+  --selection-text: #000000;
+}
+
+/* Synthwave Theme (Retro 80s) */
+[data-theme="synthwave"] {
+  --bg-primary: #2b213a;
+  --bg-secondary: #241b2f;
+  --bg-tertiary: #1e1729;
+  
+  --text-primary: #fdfdfd;
+  --text-secondary: #ff7edb;
+  --text-tertiary: #b893ce;
+  
+  --accent-primary: #fede5d;
+  --accent-secondary: #ff7edb;
+  
+  --border-color: #495495;
+  --border-hover: #fede5d;
+  
+  --code-bg: #241b2f;
+  --code-border: #495495;
+  
+  --selection-bg: #fede5d;
+  --selection-text: #2b213a;
+}
+
+/* Nord Theme (Cool Blue/Gray) */
+[data-theme="nord"] {
+  --bg-primary: #2e3440;
+  --bg-secondary: #3b4252;
+  --bg-tertiary: #434c5e;
+  
+  --text-primary: #eceff4;
+  --text-secondary: #d8dee9;
+  --text-tertiary: #a3be8c;
+  
+  --accent-primary: #88c0d0;
+  --accent-secondary: #81a1c1;
+  
+  --border-color: #4c566a;
+  --border-hover: #88c0d0;
+  
+  --code-bg: #3b4252;
+  --code-border: #4c566a;
+  
+  --selection-bg: #88c0d0;
+  --selection-text: #2e3440;
+}
+
+/* Dracula Theme (Purple Dark) */
+[data-theme="dracula"] {
+  --bg-primary: #282a36;
+  --bg-secondary: #1e1f29;
+  --bg-tertiary: #44475a;
+  
+  --text-primary: #f8f8f2;
+  --text-secondary: #bd93f9;
+  --text-tertiary: #8be9fd;
+  
+  --accent-primary: #ff79c6;
+  --accent-secondary: #bd93f9;
+  
+  --border-color: #44475a;
+  --border-hover: #ff79c6;
+  
+  --code-bg: #1e1f29;
+  --code-border: #44475a;
+  
+  --selection-bg: #ff79c6;
+  --selection-text: #282a36;
+}
+
+/* Ocean Theme (Deep Blue) */
+[data-theme="ocean"] {
+  --bg-primary: #0f1419;
+  --bg-secondary: #1a2332;
+  --bg-tertiary: #253447;
+  
+  --text-primary: #d4d4d4;
+  --text-secondary: #6db3f2;
+  --text-tertiary: #4d9cd6;
+  
+  --accent-primary: #39bae6;
+  --accent-secondary: #59c2ff;
+  
+  --border-color: #253447;
+  --border-hover: #39bae6;
+  
+  --code-bg: #1a2332;
+  --code-border: #253447;
+  
+  --selection-bg: #39bae6;
+  --selection-text: #0f1419;
+}
+
+/* Monokai Theme (Classic Developer) */
+[data-theme="monokai"] {
+  --bg-primary: #272822;
+  --bg-secondary: #1e1f1c;
+  --bg-tertiary: #3e3d32;
+  
+  --text-primary: #f8f8f2;
+  --text-secondary: #a6e22e;
+  --text-tertiary: #66d9ef;
+  
+  --accent-primary: #f92672;
+  --accent-secondary: #fd971f;
+  
+  --border-color: #3e3d32;
+  --border-hover: #f92672;
+  
+  --code-bg: #1e1f1c;
+  --code-border: #3e3d32;
+  
+  --selection-bg: #f92672;
+  --selection-text: #f8f8f2;
+}
+
+/* Apply theme colors globally */
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+@theme {
+  --font-family-sans: var(--font-space-grotesk);
+  --font-family-serif: var(--font-space-grotesk);
+  --font-family-mono: var(--font-space-grotesk);
+
+  --spacing-figma-inside-gap: 10px;
+  --spacing-figma-outside-gap: 18px;
+}
+
+:root {
+  --sh-class: #2d5e9d;
+  --sh-identifier: #354150;
+  --sh-sign: #8996a3;
+  --sh-string: #007f7a;
+  --sh-keyword: #e02518;
+  --sh-comment: #a19595;
+  --sh-jsxliterals: #6266d1;
+  --sh-property: #e25a1c;
+  --sh-entity: #e25a1c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sh-class: #4c97f8;
+    --sh-identifier: white;
+    --sh-keyword: #f47067;
+    --sh-string: #0fa295;
+  }
+  html {
+    color-scheme: dark;
+  }
+}
+
+html {
+  min-width: 360px;
+}
+
+/* Update component styles to use theme variables */
+a {
+  color: var(--text-primary);
+  text-decoration-color: var(--border-color);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-decoration-color: var(--accent-primary);
+}
+
+/* Footer social links */
+.footer-link {
+  color: var(--text-secondary);
+}
+
+.footer-link:hover {
+  color: var(--accent-primary);
+}
+
+.prose .anchor {
+  @apply absolute invisible no-underline;
+
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 80%;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply visible;
+}
+
+.prose a {
+  @apply underline transition-all hover:decoration-neutral-400 hover:dark:decoration-neutral-600 underline-offset-4 decoration-[0.1em];
+}
+
+.prose .anchor:after {
+  color: var(--text-tertiary);
+  content: '#';
+}
+
+.prose *:hover > .anchor {
+  @apply visible;
+}
+
+.prose pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--code-border);
+  @apply rounded-lg overflow-x-auto py-2 px-3 text-sm;
+}
+
+.prose code {
+  background-color: var(--code-bg);
+  border: 1px solid var(--code-border);
+  @apply px-1 py-0.5 rounded-lg;
+}
+
+.prose pre code {
+  @apply p-0;
+  border: initial;
+  line-height: 1.5;
+}
+
+.prose code span {
+  @apply font-medium;
+}
+
+.prose img {
+  /* Don't apply styles to next/image */
+  @apply m-0;
+}
+
+.prose p {
+  color: var(--text-primary);
+  @apply my-4;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  color: var(--text-primary);
+  @apply italic font-medium tracking-tight mt-6 mb-2;
+}
+
+.prose strong {
+  color: var(--accent-primary);
+  @apply italic font-medium;
+}
+
+.prose ul {
+  @apply list-disc pl-6;
+}
+
+.prose ol {
+  @apply list-decimal pl-6;
+}
+
+.prose > :first-child {
+  /* Override removing top margin, causing layout shift */
+  margin-top: 1.25em !important;
+  margin-bottom: 1.25em !important;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Remove Safari input shadow on mobile */
+input[type='text'],
+input[type='email'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+table {
+  display: block;
+  max-width: fit-content;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.title {
+  text-wrap: balance;
+}
