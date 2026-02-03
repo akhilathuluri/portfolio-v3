@@ -15,12 +15,12 @@ const themes = [
 ]
 
 export default function ThemeSwitcher() {
-  const [currentTheme, setCurrentTheme] = useState('light')
+  const [currentTheme, setCurrentTheme] = useState('cyberpunk')
   const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
-    // Get theme from localStorage or default to 'light'
-    const savedTheme = localStorage.getItem('theme') || 'light'
+    // Get theme from localStorage or default to 'cyberpunk'
+    const savedTheme = localStorage.getItem('theme') || 'cyberpunk'
     setCurrentTheme(savedTheme)
     document.documentElement.setAttribute('data-theme', savedTheme)
   }, [])
