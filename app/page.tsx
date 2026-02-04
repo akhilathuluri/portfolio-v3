@@ -5,6 +5,8 @@ import Writings from './components/writings'
 import Builds from './components/builds'
 import Contact from './components/contact'
 
+export const dynamic = 'force-dynamic'
+
 export default function Page() {
   return (
     <div className='flex flex-col gap-figma-outside-gap'>

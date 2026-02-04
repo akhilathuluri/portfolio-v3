@@ -1,5 +1,7 @@
 import { Projects } from 'app/components/projects'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata = {
   title: 'Projects',
   description: 'View my projects.',
