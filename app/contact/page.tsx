@@ -201,11 +201,11 @@ export default function ContactPage() {
           <p>
             📧 Email:{' '}
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:8309889800a@gmail.com"
               className="underline underline-offset-4"
               style={{ textDecorationColor: 'var(--border-hover)' }}
             >
-              your.email@example.com
+              8309889800a@gmail.com
             </a>
           </p>
           <p>
