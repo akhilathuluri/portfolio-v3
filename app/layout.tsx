@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: 'Athuluri Akhil | AI Engineer',
     template: '%s | Athuluri Akhil',
   },
-  description: 'AI Engineer based in Bangalore. Currently building intelligent products at TwoSpoon.ai. Master\'s from IIT Patna & IIT Ranchi.',
+  description: 'AI & Full-Stack Developer building real-world, scalable systems with a strong focus on security, data intelligence, and research-driven solutions.',
   
   // 1. Keywords: Derived from your "Previous" and "Builds" components
   keywords: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   // 3. Open Graph (Facebook, LinkedIn, iMessage)
   openGraph: {
     title: 'Athuluri Akhil | AI Engineer',
-    description: 'AI Engineer based in Bangalore. Building intelligent products that are scalable and fast.',
+    description: 'AI & Full-Stack Developer building real-world, scalable systems with a strong focus on security, data intelligence, and research-driven solutions.',
     url: baseUrl,
     siteName: 'Athuluri Akhil Portfolio',
     locale: 'en_US',
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Athuluri Akhil | AI Engineer',
-    description: 'AI Engineer at TwoSpoon.ai. Building fast.',
+    description: 'AI & Full-Stack Developer building real-world, scalable systems with a strong focus on security, data intelligence, and research-driven solutions.',
     creator: '@athuluri_akhil',
   },
 
